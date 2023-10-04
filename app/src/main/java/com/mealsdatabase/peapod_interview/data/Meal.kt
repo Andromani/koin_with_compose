@@ -1,5 +1,4 @@
-package com.mealsdatabase.peapod_interview.data
-
+package com.mealsdatabase.peapod_interview.data // ktlint-disable package-name
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -11,5 +10,5 @@ data class Meal(
     @SerialName("strMeal")
     val strMeal: String,
     @SerialName("strMealThumb")
-    val strMealThumb: String
+    val strMealThumb: String,
 )

@@ -1,11 +1,8 @@
-package com.mealsdatabase.peapod_interview.data
-
+package com.mealsdatabase.peapod_interview.data // ktlint-disable package-name
 
 import kotlinx.serialization.SerialName
-import kotlinx.serialization.Serializable
 
-@Serializable
 data class SeaFood(
     @SerialName("meals")
-    val meals: List<Meal>
+    val meals: List<Meal>,
 )

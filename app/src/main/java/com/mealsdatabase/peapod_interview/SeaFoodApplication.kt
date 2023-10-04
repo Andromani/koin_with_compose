@@ -1,4 +1,4 @@
-package com.mealsdatabase.peapod_interview
+package com.mealsdatabase.peapod_interview // ktlint-disable package-name
 
 import android.app.Application
 import com.mealsdatabase.peapod_interview.module.seadFoodModule

@@ -1,4 +1,4 @@
-package com.mealsdatabase.peapod_interview.ui.theme.component
+package com.mealsdatabase.peapod_interview.ui.theme.component // ktlint-disable package-name
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -36,7 +36,7 @@ fun showSeaList(seaFoodViewModel: SeaFoodViewModel) {
             items(seaFoodViewModel.seaFoodList.value) { mealItem ->
                 Column(
                     modifier = Modifier.padding(16.dp),
-                    verticalArrangement = Arrangement.SpaceBetween
+                    verticalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Row {
                         Column(Modifier.weight(1f)) {
@@ -45,7 +45,7 @@ fun showSeaList(seaFoodViewModel: SeaFoodViewModel) {
                                 contentDescription = null,
                                 modifier = Modifier
                                     .size(100.dp)
-                                    .clip(CircleShape)
+                                    .clip(CircleShape),
                             )
                         }
                         Spacer(Modifier.width(8.dp))
@@ -54,24 +54,23 @@ fun showSeaList(seaFoodViewModel: SeaFoodViewModel) {
                                 .fillMaxWidth()
                                 .fillMaxHeight()
                                 .align(Alignment.CenterVertically)
-                                .weight(2f)
+                                .weight(2f),
                         ) {
                             Text(
                                 text = mealItem.strMeal,
                                 modifier = Modifier.fillMaxSize(),
                                 fontSize = 20.sp,
                                 fontFamily = FontFamily.Monospace,
-                                textAlign = TextAlign.Start
+                                textAlign = TextAlign.Start,
                             )
                         }
                     }
                 }
                 Divider(
                     thickness = 0.5.dp,
-                    color = Color.DarkGray
+                    color = Color.DarkGray,
                 )
             }
-
         }
     }
 }

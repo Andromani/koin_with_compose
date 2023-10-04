@@ -1,4 +1,4 @@
-package com.mealsdatabase.peapod_interview.viewmodel
+package com.mealsdatabase.peapod_interview.viewmodel // ktlint-disable package-name
 
 import android.util.Log
 import androidx.compose.runtime.MutableState
@@ -9,7 +9,7 @@ import com.mealsdatabase.peapod_interview.data.Meal
 import com.mealsdatabase.peapod_interview.repositry.SeaFoodRepositry
 import kotlinx.coroutines.launch
 
-class SeaFoodViewModel(val seaFoodRepositry: SeaFoodRepositry) : ViewModel() {
+class SeaFoodViewModel(private val seaFoodRepositry: SeaFoodRepositry) : ViewModel() {
 
     val seaFoodList: MutableState<List<Meal>> = mutableStateOf(emptyList())
 

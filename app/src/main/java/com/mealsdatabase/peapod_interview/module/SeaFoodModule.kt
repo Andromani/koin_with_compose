@@ -1,4 +1,4 @@
-package com.mealsdatabase.peapod_interview.module
+package com.mealsdatabase.peapod_interview.module // ktlint-disable package-name
 
 import com.mealsdatabase.peapod_interview.network.SeaFoodWebServices
 import com.mealsdatabase.peapod_interview.repositry.SeaFoodRepositry

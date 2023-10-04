@@ -1,4 +1,4 @@
-package com.mealsdatabase.peapod_interview.ui.theme
+package com.mealsdatabase.peapod_interview.ui.theme // ktlint-disable package-name
 
 import androidx.compose.ui.graphics.Color
 

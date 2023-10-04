@@ -1,7 +1,6 @@
-package com.mealsdatabase.peapod_interview.network
+package com.mealsdatabase.peapod_interview.network // ktlint-disable package-name
 
 import com.mealsdatabase.peapod_interview.data.SeaFood
-import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -13,8 +12,6 @@ class SeaFoodWebServices {
     private val seaFoodApiInterface by lazy {
         val httpLoggingInterceptor = HttpLoggingInterceptor()
         httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
-
-        val httpClient = OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build()
 
         Retrofit.Builder()
             .baseUrl(baseURL)

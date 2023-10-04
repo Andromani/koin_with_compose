@@ -1,4 +1,4 @@
-package com.mealsdatabase.peapod_interview.activity
+package com.mealsdatabase.peapod_interview.activity // ktlint-disable package-name
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

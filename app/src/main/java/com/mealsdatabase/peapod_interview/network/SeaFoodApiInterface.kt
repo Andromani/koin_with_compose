@@ -1,4 +1,4 @@
-package com.mealsdatabase.peapod_interview.network
+package com.mealsdatabase.peapod_interview.network // ktlint-disable package-name
 
 import com.mealsdatabase.peapod_interview.data.SeaFood
 import retrofit2.Response
@@ -9,5 +9,4 @@ interface SeaFoodApiInterface {
 
     @GET("filter.php")
     suspend fun getSeaFoods(@Query("c") seaFoodName: String): Response<SeaFood>
-
 }
